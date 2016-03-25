@@ -1,5 +1,6 @@
-package org.crce.interns.dao;
+package org.crce.interns.dao.impl;
 
+import org.crce.interns.dao.LoginDAO;
 import org.crce.interns.model.RoleMaster;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;

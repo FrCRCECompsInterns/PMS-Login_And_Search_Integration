@@ -7,12 +7,14 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 @Entity
 @Table(name = "role_master",catalog="role_function_schema")
 public class RoleMaster implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8686871391031141851L;
 	@Id
 	@Column(name = "role_id" )
 	String roleId;

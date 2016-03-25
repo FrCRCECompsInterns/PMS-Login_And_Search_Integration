@@ -31,9 +31,14 @@
 	<bean id="loginService"
 		class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean">
 		<property name="serviceUrl"
-			value="http://localhost:8080/Integration_AppServer/L.http"></property>
+			value="http://localhost:8080/Integration_AppServer/Login.http"></property>
 		<property name="serviceInterface" value="org.crce.interns.service.LoginService"></property>
 	</bean>
 	
-
+	<bean id="searchService"
+		class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean">
+		<property name="serviceUrl"
+			value="http://localhost:8080/Integration_AppServer/Search.http"></property>
+		<property name="serviceInterface" value="org.crce.interns.service.SearchService"></property>
+	</bean>
 </beans>

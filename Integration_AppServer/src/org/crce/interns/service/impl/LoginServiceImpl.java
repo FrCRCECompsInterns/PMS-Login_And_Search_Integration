@@ -1,7 +1,8 @@
-package org.crce.interns.service;
+package org.crce.interns.service.impl;
 
 import org.crce.interns.dao.*;
 import org.crce.interns.model.RoleMaster;
+import org.crce.interns.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

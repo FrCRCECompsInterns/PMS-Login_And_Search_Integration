@@ -6,10 +6,6 @@ import java.sql.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToOne;
-//import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -37,10 +33,6 @@ public class UserDetails implements Serializable{
 	String modifiedBy;
 	@Column(name = "modified_date" )
 	Date modifiedDate;
-	@ManyToOne
-	@JoinTable(name="role_function_schema.role_master",
-			joinColumns = { @JoinColumn(name = "role_id") }, 
-            inverseJoinColumns = { @JoinColumn(name = "role_id") })
 	
 	public String getRoleId() {
 		return roleId;

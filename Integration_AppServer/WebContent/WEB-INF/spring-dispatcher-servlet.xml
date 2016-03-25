@@ -49,11 +49,17 @@
 
 	<tx:annotation-driven />
 
-	<bean id="loginUser" class="org.crce.interns.service.LoginServiceImpl"></bean>
-	<bean name="/L.http"
+	<bean id="loginUser" class="org.crce.interns.service.impl.LoginServiceImpl"></bean>
+	<bean name="/Login.http"
 		class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
 		<property name="service" ref="loginUser"></property>
 		<property name="serviceInterface" value="org.crce.interns.service.LoginService"></property>
 	</bean>
 
+	<bean id="searchUser" class="org.crce.interns.service.impl.SearchServiceImpl"></bean>
+	<bean name="/Search.http"
+		class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter">
+		<property name="service" ref="searchUser"></property>
+		<property name="serviceInterface" value="org.crce.interns.service.SearchService"></property>
+	</bean>
 </beans>

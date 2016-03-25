@@ -9,7 +9,8 @@
 </head>
 <body>
 <h3>Welcome To the STUDENT page !!!!! 
-<%-- <core:out value="${loginForm.userName}" /> --%></h3>
+<c:out value="${loginForm.userName}" /></h3>
+<jsp:include page="searchbar.jsp"/>
 <table>
 	<tr>
 		<td><a href="Login">Back</a></td>
