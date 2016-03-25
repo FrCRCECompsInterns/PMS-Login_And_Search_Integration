@@ -20,7 +20,7 @@
 			<table align="center" >
 				<tr>
 					<td>${user.userName}<td>
-					<td><a href="#">Profile</a></td>
+					<td><a href="#">Profile Link</a></td>
 				</tr>
 			</table>
 		</c:forEach>
